@@ -4,6 +4,10 @@
 @import "mixins";
 @import "fullPagePlugin";
 
+body {
+  text-align: center;
+}
+
 .pasek {
   height: 20%;
   background-color: green;
@@ -18,41 +22,58 @@
   background-color: silver;
 }
 
-#bg {
+#bg-hero {
   background: url("../assets/images/macbook.jpg") center;
   background-size: cover;
   width: 100%;
-  margin-left: 5%;
 }
 
-#fg {
+#fg-hero {
   background: url("../assets/images/macbook2.jpg") center;
+  background-position: right;
   background-size: cover;
   opacity: .6;
   width: 100%;
-  margin-left: 5%;
-}
-
-.button {
-  color: white;
-  background-color: yellow;
 }
 
 .section {
   text-align: center;
 }
 
+.button {
+  color: black;
+  background-color: white;
+}
+
+.fp-controlArrow.fp-prev {
+  left: 150px;
+}
+
+// ====== MAIN DESKTOP NAVIGATION ======
+
 .main-nav {
   position: fixed;
   height: 100vh;
-  max-width: 10%;
-  color: white;
-  background-color: yellow;
+  width: 10%;
+  color: black;
+  background-color: white;
   z-index: 100000;
   top: 0;
   left: 0;
 }
 
-.fp-controlArrow.fp-prev {
-  left: 150px;
+.main-nav-btn {
+  border: 1px solid red;
+  height: 20%;
+  width: 100%;
+}
+
+.main-nav-btn a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.main-logo img {
+  width: 100%;
 }
