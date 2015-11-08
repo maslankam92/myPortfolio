@@ -1,11 +1,58 @@
-h1 {
-font-family: 'Righteous', cursive;
-  font-size: 80px;
-  font-weight: lighter;
+/*===== PARTIALS ======*/
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import "fullPagePlugin";
+
+.pasek {
+  height: 20%;
+  background-color: green;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
-//
-//h1 {
-//  font-family: 'Nunito', sans-serif;
-//  font-size: 40px;
-//  font-weight: bold;
-//}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  background-color: silver;
+}
+
+#bg {
+  background: url("../assets/images/macbook.jpg") center;
+  background-size: cover;
+  width: 100%;
+  margin-left: 5%;
+}
+
+#fg {
+  background: url("../assets/images/macbook2.jpg") center;
+  background-size: cover;
+  opacity: .6;
+  width: 100%;
+  margin-left: 5%;
+}
+
+.button {
+  color: white;
+  background-color: yellow;
+}
+
+.section {
+  text-align: center;
+}
+
+.main-nav {
+  position: fixed;
+  height: 100vh;
+  max-width: 10%;
+  color: white;
+  background-color: yellow;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+}
+
+.fp-controlArrow.fp-prev {
+  left: 150px;
+}
