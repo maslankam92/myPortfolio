@@ -397,8 +397,15 @@ th {
   padding: 0;
 }
 
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Nunito', sans-serif;
+  color: #1d1d1d;
+  font-family: "Nunito", sans-serif;
   font-size: 16px;
   text-align: center;
 }
@@ -408,52 +415,49 @@ a {
   text-decoration: none;
 }
 
-#scene {
-  background-color: #010005;
-  width: 100%;
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
 }
 
-.parallax-bg {
-  background: url("../assets/images/macbook.jpg") no-repeat center;
-  background-size: contain;
-  width: 100%;
-  padding-bottom: 50%;
-}
-
-.parallax-fg {
+.hero {
   background: url("../assets/images/macbook-blur.jpg") no-repeat center;
-  background-size: contain;
-  opacity: .6;
-  width: 100%;
-  padding-bottom: 50%;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .main-header {
-  font-size: 2vw;
-  font-family: 'Righteous', cursive;
-  font-weight: lighter;
+  font-size: 2rem;
+  font-family: "Righteous", cursive;
   color: #F8F2E2;
-  margin: 4% auto 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-.main-header > * {
-  margin: 0;
+  padding: 6% 0;
 }
 
 .main-header h1 {
-  font-size: 6vw;
+  font-size: 5rem;
 }
 
 .main-header h1 span {
   color: #3BC391;
-  font-size: 8vw;
+  font-size: 7rem;
   text-transform: uppercase;
 }
 
+.main-header .arrow-down {
+  color: #3BC391;
+  font-size: 6rem;
+  display: block;
+  margin: 10rem 0 3rem;
+  transition: .2s;
+}
+
+.main-header .arrow-down:hover {
+  color: #2f9c74;
+  transition: .2s;
+}
+
 .portfolioBtn {
-  margin-top: 22vw;
   padding: 2% 6%;
   display: inline-block;
   text-transform: uppercase;
@@ -467,8 +471,8 @@ a {
 
 .portfolioBtn:after {
   content: '';
-  position: absolute;
   z-index: -1;
+  position: absolute;
   transition: all 0.3s;
   width: 100%;
   height: 0;
@@ -484,7 +488,7 @@ a {
 .portfolioBtn:hover,
 .portfolioBtn:active {
   color: #F8F2E2;
-  border: 3px solid #F8F2E2;
+  z-index: 1;
 }
 
 .portfolioBtn:hover:after {
@@ -495,6 +499,99 @@ a {
 .portfolioBtn:active:after {
   height: 400%;
   opacity: 1;
+}
+
+.nav-bar {
+  color: #1d1d1d;
+  background-color: #F8F2E2;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 8vw;
+  z-index: 99999999;
+}
+
+.main-logo img {
+  width: 100%;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu .fa {
+  display: block;
+  font-size: 4vw;
+  padding-top: 20%;
+}
+
+.menu li {
+  height: 20vh;
+}
+
+.menu li a {
+  display: block;
+  font-size: 1.2vw;
+  height: 100%;
+}
+
+.about {
+  background-color: #3BC391;
+}
+
+.about h2 {
+  color: #1d1d1d;
+  font-size: 3rem;
+  margin: 0;
+  padding: 5% 0;
+  text-transform: uppercase;
+}
+
+.about-flex {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8%;
+  justify-content: space-between;
+}
+
+.about-image {
+  width: 40%;
+  position: relative;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 350px;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+}
+
+.about-text {
+  width: 50%;
+  text-align: right;
+  padding-bottom: 5%;
+}
+
+.about-quote {
+  font-size: 2rem;
+  font-weight: bolder;
+  background-color: #2f9c74;
+  padding: 4% 0 3%;
+  width: 100%;
+}
+
+.about-quote p {
+  display: inline-block;
+}
+
+.about-quote footer {
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */

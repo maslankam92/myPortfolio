@@ -3,28 +3,27 @@
 @mixin portfolioBtn {
 
   .portfolioBtn {
-    margin-top: 22vw;
     padding: 2% 6%;
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 1px;
     position: relative;
     transition: all 0.3s;
-    border: 3px solid #3BC391;
-    color: #3BC391;
+    border: 3px solid $color-mainGreen;
+    color: $color-mainGreen;
     overflow: hidden;
   }
 
   .portfolioBtn:after {
     content: '';
-    position: absolute;
     z-index: -1;
+    position: absolute;
     transition: all 0.3s;
     width: 100%;
     height: 0;
     top: 50%;
     left: 50%;
-    background: #3BC391;
+    background: $color-mainGreen;
     opacity: 0;
     -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
     -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
@@ -33,8 +32,8 @@
 
   .portfolioBtn:hover,
   .portfolioBtn:active {
-    color: #F8F2E2;
-    border: 3px solid #F8F2E2;
+    color: $color-mainWhite;
+    z-index: 1;
   }
 
   .portfolioBtn:hover:after {
@@ -46,4 +45,14 @@
     height: 400%;
     opacity: 1;
   }
+}
+
+// ====== h2
+
+@mixin headlineTwo {
+  color: $color-mainBlack;
+  font-size: 3rem;
+  margin:0;
+  padding: 5% 0;
+  text-transform: uppercase;
 }
