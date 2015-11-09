@@ -408,18 +408,93 @@ a {
   text-decoration: none;
 }
 
-#bg-hero {
-  background: url("../assets/images/macbook.jpg") center;
-  background-size: cover;
+#scene {
+  background-color: #010005;
   width: 100%;
 }
 
-#fg-hero {
-  background: url("../assets/images/macbook2.jpg") center;
-  background-position: right;
-  background-size: cover;
+.parallax-bg {
+  background: url("../assets/images/macbook.jpg") no-repeat center;
+  background-size: contain;
+  width: 100%;
+  padding-bottom: 50%;
+}
+
+.parallax-fg {
+  background: url("../assets/images/macbook-blur.jpg") no-repeat center;
+  background-size: contain;
   opacity: .6;
   width: 100%;
+  padding-bottom: 50%;
+}
+
+.main-header {
+  font-size: 2vw;
+  font-family: 'Righteous', cursive;
+  font-weight: lighter;
+  color: #F8F2E2;
+  margin: 4% auto 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.main-header > * {
+  margin: 0;
+}
+
+.main-header h1 {
+  font-size: 6vw;
+}
+
+.main-header h1 span {
+  color: #3BC391;
+  font-size: 8vw;
+  text-transform: uppercase;
+}
+
+.portfolioBtn {
+  margin-top: 22vw;
+  padding: 2% 6%;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  transition: all 0.3s;
+  border: 3px solid #3BC391;
+  color: #3BC391;
+  overflow: hidden;
+}
+
+.portfolioBtn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s;
+  width: 100%;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  background: #3BC391;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.portfolioBtn:hover,
+.portfolioBtn:active {
+  color: #F8F2E2;
+  border: 3px solid #F8F2E2;
+}
+
+.portfolioBtn:hover:after {
+  height: 260%;
+  opacity: 1;
+}
+
+.portfolioBtn:active:after {
+  height: 400%;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

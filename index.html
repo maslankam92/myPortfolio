@@ -11,15 +11,31 @@
     <link  href="css/style.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <script src="js/jquery-2.1.4.js" type="text/javascript"></script>
+    <script src="js/parallax.min.js"></script>
     <script src="js/app.js" type="text/javascript"></script>
 </head>
 <body>
 
+    <!--<nav class="nav-bar">-->
+        <!--<div class="main-logo"><a></a></div>-->
+        <!--<ul class="menu">-->
+            <!--<li><a href="#">about</a></li>-->
+            <!--<li><a href="#">skills</a></li>-->
+            <!--<li><a href="#">portfolio</a></li>-->
+            <!--<li><a href="#">contact</a></li>-->
+        <!--</ul>-->
+    <!--</nav>-->
 
-<script src="js/parallax.min.js"></script>
-<script>
-    var scene = document.getElementById('scene');
-    var parallax = new Parallax(scene);
-</script>
+    <header id="scene">
+        <div class="layer parallax-bg" data-depth="0.0"></div>
+        <div class="layer main-header cl-effect-19" data-depth="0.05">
+            <h1>hi, I am <span>Marcin</span></h1>
+            <p>junior front-end developer</p>
+            <a href="#portfolio" class="portfolioBtn">portfolio</a>
+        </div>
+        <div class="layer parallax-fg" data-depth="0.2"></div>
+    </header>
+
+
 </body>
 </html>
