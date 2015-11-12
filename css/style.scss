@@ -23,8 +23,8 @@ a {
 }
 
 .wrapper {
-  //margin: 0 7% 0 13%;
-  margin: 0 auto;
+  margin: 0 7% 0 13%;
+  //margin: 0 auto;
   width: 80%;
   max-width: 1200px;
 }
@@ -71,16 +71,14 @@ a {
 // styles for portfolio button
 @include portfolioBtn;
 
-
-// ====== HOME PAGE SECTION ======
-
-// navigation bar styles =====
+// NAVIGATION BAR STYLES =====
 .nav-bar {
   color: $color-mainBlack;
   background-color: $color-mainWhite;
   height: 100vh;
   left: 0;
   position: fixed;
+  text-transform: uppercase;
   top: 0;
   width: 8vw;
   z-index: 99999999;
@@ -106,12 +104,31 @@ a {
   height: 20vh;
 }
 
+.menu a[href$="about"] i:hover {
+  color: $color-mainGreen;
+}
+
+.menu a[href$="skills"] i:hover {
+  color: $color-mainBlue;
+}
+
+.menu a[href$="portfolio"] i:hover {
+  color: $color-mainRed;
+}
+
+.menu a[href$="contact"] i:hover {
+  color: $color-mainGrey;
+}
+
 .menu li a {
   display: block;
   font-size: 1.2vw;
   height: 100%;
 }
 
+.active {
+  background-color: red;
+}
 
 // ====== ABOUT SECTION ======
 
@@ -126,34 +143,33 @@ a {
 .about-flex {
   display: flex;
   flex-direction: row;
-  margin-top: 8%;
   justify-content: space-between;
+  margin-top: 8%;
 }
 
 .about-image {
-  width: 40%;
   position: relative;
+  width: 40%;
   text-align: center;
 }
 
 .about-image img {
-  max-width: 350px;
-  position: absolute;
   bottom: 0;
   left: 20%;
+  position: absolute;
+  max-width: 350px;
 }
 
 .about-text {
-  width: 50%;
-  //font-size: 1rem;
-  text-align: right;
   padding-bottom: 5%;
+  width: 50%;
+  text-align: right;
 }
 
 .about-quote {
+  background-color: darken($color-mainGreen, 5%);
   font-size: 2rem;
   font-weight: bolder;
-  background-color: darken($color-mainGreen, 10%);
   padding: 4% 0 3%;
   width: 100%;
 }
@@ -166,5 +182,81 @@ a {
   font-size: 1rem;
   font-weight: normal;
   text-align: right;
+}
 
+// ====== SKILLS SECTION ======
+
+.skills {
+  background-color: $color-mainBlue;
+}
+
+.skills h2 {
+  @include headlineTwo;
+}
+
+.skills-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skills-headline i,
+.skills-future i {
+  font-size: 3rem;
+}
+
+.skills-headline p,
+.skills-future p {
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 2% 0;
+}
+
+.skills-set {
+  background-color: darken($color-mainBlue, 5%);
+  margin: 2% 0;
+  padding: 2% 0;
+}
+
+.skills-set:first-child {
+  margin-top: 0;
+}
+
+.skills img {
+  display: inline-block;
+  margin: 2%;
+}
+
+.skills-bar-future {
+  background-color: darken($color-mainBlue, 10%);
+  padding: 2% 0;
+}
+.skills-future p {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+
+
+
+
+
+// ====== PORTFOLIO SECTION ======
+
+.portfolio {
+  background-color: $color-mainRed;
+}
+
+.portfolio h2 {
+  @include headlineTwo;
+}
+
+// ====== CONTACT SECTION ======
+
+.contact {
+  background-color: $color-mainGrey;
+}
+
+.contact h2 {
+  @include headlineTwo;
 }
