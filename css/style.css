@@ -531,32 +531,30 @@ a {
 
 .menu li {
   height: 20vh;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
 }
 
 .menu a[href$="about"] i:hover {
-  color: #3BC391;
+  color: #2f9c74;
 }
 
 .menu a[href$="skills"] i:hover {
-  color: #2f79c3;
+  color: #25609a;
 }
 
 .menu a[href$="portfolio"] i:hover {
-  color: #eb4549;
+  color: #e4191d;
 }
 
 .menu a[href$="contact"] i:hover {
-  color: #374047;
+  color: #21262a;
 }
 
 .menu li a {
   display: block;
   font-size: 1.2vw;
   height: 100%;
-}
-
-.active {
-  background-color: red;
 }
 
 .about {
@@ -680,6 +678,106 @@ a {
   margin: 0;
   padding: 5% 0;
   text-transform: uppercase;
+}
+
+.slide {
+  margin-bottom: 5%;
+}
+
+.image-portfolio-main,
+.image-portfolio-side {
+  border: 5px solid #1d1d1d;
+  display: inline-block;
+  max-width: 500px;
+}
+
+.text-portfolio-main,
+.text-portfolio-side {
+  background: #e92e32;
+  display: inline-block;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 1.55;
+  margin-left: 5%;
+  padding: 5%;
+  width: 40%;
+  vertical-align: top;
+}
+
+.image-portfolio-side {
+  border: none;
+}
+
+.text-portfolio-side {
+  line-height: initial;
+  padding: 2%;
+  text-align: left;
+}
+
+.text-portfolio-side h3 {
+  margin: 3% 0;
+}
+
+.portfolio-skills-list {
+  margin: 3% 0;
+  padding: 0;
+  list-style: none;
+}
+
+.portfolio-skills-list li {
+  background: #eb4549;
+  border-radius: 5px;
+  color: #1d1d1d;
+  display: inline-block;
+  margin: 3px;
+  padding: 1px 4px;
+}
+
+.seeBtn {
+  background-color: #374047;
+  color: #F8F2E2;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin: 5% 0 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: .2s;
+}
+
+.seeBtn:hover {
+  background: #1d1d1d;
+  color: #eb4549;
+  transition: .2s;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  padding: 20px !important;
+}
+
+.owl-theme .owl-buttons i {
+  margin-top: 2px;
+  font-size: 2rem;
+}
+
+.owl-pagination {
+  padding-bottom: 40px;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+  background: none;
+  left: -45px;
+  top: 150px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next {
+  background: none;
+  right: -45px;
+  top: 150px;
 }
 
 .contact {

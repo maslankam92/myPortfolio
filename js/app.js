@@ -18,7 +18,7 @@ $(function(){
 
             links.click(function(){
                 $("html, body").animate({                               //if links are clicked, animate (1s) html and body
-                    scrollTop: $($(this).attr("href")).offset().top     //to the top of the clicked anchor's href
+                    scrollTop: $($(this).attr("href")).offset().top + 1    //to the top of the clicked anchor's href
                 }, 700, 'swing');
 
                 return false;
@@ -35,9 +35,10 @@ $(function(){
 
                     if(index + 1 >= sections.length){
                         if(sections.eq(index).offset().top < $(window).scrollTop()){
+                            console.log(sections.eq(index).offset().top);
+                            console.log($(window).scrollTop());
                             var colorBg = menuBtns.eq(index).data("color");
                             menuBtns.eq(index).css({"background-color": colorBg });
-                            console.log("cos sie dzieje");
                         }
                         else {
                             menuBtns.eq(index).css({"background-color": "initial" });
@@ -49,7 +50,6 @@ $(function(){
                         if( sections.eq(index).offset().top < $(window).scrollTop() &&          //te dwie linijki szukaja miedzy ktorymi paragrafami sie znajdujemy
                             sections.eq(index + 1).offset().top > $(window).scrollTop()){
                             var color = menuBtns.eq(index).data("color");
-                            console.log(color);
                             menuBtns.eq(index).css({"background-color": color });
                         }
                         else {
@@ -61,11 +61,36 @@ $(function(){
             });
         }
 
+        function owlCarouselPortfolio() {
+            var owl = $("#owl-example");
+
+            owl.owlCarousel({
+                singleItem : true,
+                //Basic Speeds
+                slideSpeed : 500,
+                // Navigation
+                navigation : true,
+                navigationText: [
+                    "<i class='fa fa-arrow-left'></i>",
+                    "<i class='fa fa-arrow-right'></i>"
+                ],
+                //Transitions
+                transitionStyle : "backSlide"
+            });
+
+            $(".next").click(function(){
+                owl.trigger('owl.next');
+                console.log("kurwa");
+            })
+
+        }
+
 
         return {
             init: init,
             scrollPage: scrollPage,
-            scrollSpy: scrollSpy
+            scrollSpy: scrollSpy,
+            owlCarouselPortfolio: owlCarouselPortfolio
         }
 
     };
@@ -74,6 +99,7 @@ $(function(){
     app.init();
     app.scrollPage();
     app.scrollSpy();
+    app.owlCarouselPortfolio();
 
 
 });
