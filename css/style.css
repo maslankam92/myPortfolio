@@ -792,4 +792,100 @@ a {
   text-transform: uppercase;
 }
 
+.contact-text {
+  font-size: 2.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.contact-text:last-child {
+  font-size: 2rem;
+}
+
+.social-icons-list {
+  list-style: none;
+  margin: 5% 0;
+}
+
+.social-icons-list li {
+  display: inline-block;
+  margin: 0 5%;
+}
+
+.social-icons-list li a {
+  display: block;
+}
+
+.social-icons-list i {
+  color: #1d1d1d;
+  font-size: 6rem;
+  transition: .2s;
+}
+
+.gmail a:hover i {
+  color: #dd4b39;
+  transition: .2s;
+}
+
+.github a:hover i {
+  color: #999999;
+  transition: .2s;
+}
+
+.linkedin a:hover i {
+  color: #007bb5;
+  transition: .2s;
+}
+
+.twitter a:hover i {
+  color: #00aced;
+  transition: .2s;
+}
+
+.download-resume {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 3%;
+}
+
+.download-resume:hover i {
+  color: #eb4549;
+  transition: .2s;
+}
+
+.download-resume i {
+  margin-right: 20px;
+  transition: .2s;
+}
+
+.contact-bar {
+  background: #1d1d1d;
+  color: #374047;
+  padding: 5%;
+}
+
+.contact-bar i {
+  color: #eb4549;
+  animation: hearthBeating 1.3s infinite;
+  margin: 0 2px;
+}
+
+@keyframes hearthBeating {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1.2);
+  }
+  35% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
