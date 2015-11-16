@@ -27,6 +27,15 @@ a {
   //margin: 0 auto;
   width: 80%;
   max-width: 1200px;
+  @media screen and (min-width: 1200px){
+    margin: 0 auto;
+  }
+  @media #{$media700} {
+    margin: 0 auto;
+  }
+  @media #{$media600} {
+    width: 95%;
+  }
 }
 
 // ====== HEADER SECTION ======
@@ -42,16 +51,25 @@ a {
   font-family: $font-righteous;
   color: $color-mainWhite;
   padding: 6% 0;
+  @media #{$media600} {
+    font-size: 1.5rem;
+  }
 }
 
 .main-header h1 {
   font-size: 5rem;
+  @media #{$media600} {
+    font-size: 3rem;
+  }
 }
 
 .main-header h1 span {
   color: $color-mainGreen;
   font-size: 7rem;
   text-transform: uppercase;
+  @media #{$media600} {
+    font-size: 5rem;
+  }
 }
 
 .main-header .arrow-down {
@@ -60,6 +78,10 @@ a {
   display: block;
   margin: 10rem 0 3rem;
   transition: .2s;
+  @media #{$media600} {
+    font-size: 4rem;
+    margin: 4rem 0 2rem;
+  }
 }
 
 .main-header .arrow-down:hover {
@@ -82,6 +104,9 @@ a {
   top: 0;
   width: 8vw;
   z-index: 99999999;
+  @media #{$media700} {
+    display: none;
+  }
 }
 
 .main-logo img {
@@ -143,12 +168,19 @@ a {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 8%;
+  @media #{$media900} {
+    flex-direction: column;
+    margin-top: 2%;
+  }
 }
 
 .about-image {
   position: relative;
   width: 40%;
   text-align: center;
+  @media #{$media900} {
+    width: 100%;
+  }
 }
 
 .about-image img {
@@ -156,12 +188,27 @@ a {
   left: 20%;
   position: absolute;
   max-width: 350px;
+  @media #{$media1050} {
+    left: 0;
+  }
+  @media #{$media900} {
+    position: static;
+  }
+  @media #{$media600} {
+    max-width: 250px;
+  }
+
 }
 
 .about-text {
   padding-bottom: 5%;
   width: 50%;
   text-align: right;
+  @media #{$media900} {
+    margin-top: 2%;
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .about-quote {
@@ -170,6 +217,9 @@ a {
   font-weight: bolder;
   padding: 4% 0 3%;
   width: 100%;
+  @media #{$media600} {
+    font-size: 1rem;
+  }
 }
 
 .about-quote p {
@@ -180,6 +230,9 @@ a {
   font-size: 1rem;
   font-weight: normal;
   text-align: right;
+  @media #{$media600} {
+    font-size: .8rem;
+  }
 }
 
 // ====== SKILLS SECTION ======
@@ -201,6 +254,9 @@ a {
 .skills-headline i,
 .skills-future i {
   font-size: 3rem;
+  @media #{$media600} {
+    font-size: 2rem;
+  }
 }
 
 .skills-headline p,
@@ -223,6 +279,9 @@ a {
 .skills img {
   display: inline-block;
   margin: 2%;
+  @media #{$media600} {
+    max-width: 96px;
+  }
 }
 
 .skills-bar-future {

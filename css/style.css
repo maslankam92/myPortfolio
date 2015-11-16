@@ -420,6 +420,21 @@ a {
   width: 80%;
   max-width: 1200px;
 }
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 95%;
+  }
+}
 
 .hero {
   background: url("../assets/images/macbook-blur.jpg") no-repeat center;
@@ -433,15 +448,30 @@ a {
   color: #F8F2E2;
   padding: 6% 0;
 }
+@media screen and (max-width: 600px) {
+  .main-header {
+    font-size: 1.5rem;
+  }
+}
 
 .main-header h1 {
   font-size: 5rem;
+}
+@media screen and (max-width: 600px) {
+  .main-header h1 {
+    font-size: 3rem;
+  }
 }
 
 .main-header h1 span {
   color: #3BC391;
   font-size: 7rem;
   text-transform: uppercase;
+}
+@media screen and (max-width: 600px) {
+  .main-header h1 span {
+    font-size: 5rem;
+  }
 }
 
 .main-header .arrow-down {
@@ -450,6 +480,12 @@ a {
   display: block;
   margin: 10rem 0 3rem;
   transition: .2s;
+}
+@media screen and (max-width: 600px) {
+  .main-header .arrow-down {
+    font-size: 4rem;
+    margin: 4rem 0 2rem;
+  }
 }
 
 .main-header .arrow-down:hover {
@@ -512,6 +548,11 @@ a {
   width: 8vw;
   z-index: 99999999;
 }
+@media screen and (max-width: 700px) {
+  .nav-bar {
+    display: none;
+  }
+}
 
 .main-logo img {
   width: 100%;
@@ -568,6 +609,11 @@ a {
   padding: 5% 0;
   text-transform: uppercase;
 }
+@media screen and (max-width: 600px) {
+  .about h2 {
+    font-size: 2rem;
+  }
+}
 
 .about-flex {
   display: flex;
@@ -575,11 +621,22 @@ a {
   justify-content: space-between;
   margin-top: 8%;
 }
+@media screen and (max-width: 900px) {
+  .about-flex {
+    flex-direction: column;
+    margin-top: 2%;
+  }
+}
 
 .about-image {
   position: relative;
   width: 40%;
   text-align: center;
+}
+@media screen and (max-width: 900px) {
+  .about-image {
+    width: 100%;
+  }
 }
 
 .about-image img {
@@ -588,11 +645,33 @@ a {
   position: absolute;
   max-width: 350px;
 }
+@media screen and (max-width: 1050px) {
+  .about-image img {
+    left: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about-image img {
+    position: static;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-image img {
+    max-width: 250px;
+  }
+}
 
 .about-text {
   padding-bottom: 5%;
   width: 50%;
   text-align: right;
+}
+@media screen and (max-width: 900px) {
+  .about-text {
+    margin-top: 2%;
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .about-quote {
@@ -601,6 +680,11 @@ a {
   font-weight: bolder;
   padding: 4% 0 3%;
   width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .about-quote {
+    font-size: 1rem;
+  }
 }
 
 .about-quote p {
@@ -611,6 +695,11 @@ a {
   font-size: 1rem;
   font-weight: normal;
   text-align: right;
+}
+@media screen and (max-width: 600px) {
+  .about-quote footer {
+    font-size: .8rem;
+  }
 }
 
 .skills {
@@ -624,6 +713,11 @@ a {
   padding: 5% 0;
   text-transform: uppercase;
 }
+@media screen and (max-width: 600px) {
+  .skills h2 {
+    font-size: 2rem;
+  }
+}
 
 .skills-flex {
   display: flex;
@@ -634,6 +728,12 @@ a {
 .skills-headline i,
 .skills-future i {
   font-size: 3rem;
+}
+@media screen and (max-width: 600px) {
+  .skills-headline i,
+  .skills-future i {
+    font-size: 2rem;
+  }
 }
 
 .skills-headline p,
@@ -657,6 +757,11 @@ a {
   display: inline-block;
   margin: 2%;
 }
+@media screen and (max-width: 600px) {
+  .skills img {
+    max-width: 96px;
+  }
+}
 
 .skills-bar-future {
   background-color: #25609a;
@@ -678,6 +783,11 @@ a {
   margin: 0;
   padding: 5% 0;
   text-transform: uppercase;
+}
+@media screen and (max-width: 600px) {
+  .portfolio h2 {
+    font-size: 2rem;
+  }
 }
 
 .slide {
@@ -790,6 +900,11 @@ a {
   margin: 0;
   padding: 5% 0;
   text-transform: uppercase;
+}
+@media screen and (max-width: 600px) {
+  .contact h2 {
+    font-size: 2rem;
+  }
 }
 
 .contact-text {

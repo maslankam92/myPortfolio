@@ -55,4 +55,11 @@
   margin:0;
   padding: 5% 0;
   text-transform: uppercase;
+  @media #{$media600} {
+    font-size: 2rem;
+  }
+}
+
+@mixin mq {
+
 }
