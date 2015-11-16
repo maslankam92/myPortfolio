@@ -317,6 +317,9 @@ a {
   border: 5px solid $color-mainBlack;
   display: inline-block;
   max-width: 500px;
+  @media #{$media1130} {
+    max-width: 300px;
+  }
 }
 
 .text-portfolio-main,
@@ -330,6 +333,24 @@ a {
   padding: 5%;
   width: 40%;
   vertical-align: top;
+  @media #{$media900} {
+    font-size: 1rem;
+    padding: 1%;
+  }
+  @media #{$media750} {
+    display: block;
+    margin-top: 5%;
+    width: 90%;
+  }
+}
+.text-portfolio-main {
+  @media #{$media1130} {
+    line-height: initial;
+  }
+}
+
+.slide {
+  margin: 0;
 }
 
 .image-portfolio-side {
@@ -426,6 +447,9 @@ a {
   font-size: 2.8rem;
   font-weight: 900;
   text-transform: uppercase;
+  @media #{$media600} {
+    font-size: 2rem;
+  }
 }
 
 .contact-text:last-child {
@@ -440,7 +464,9 @@ a {
 .social-icons-list li {
   display: inline-block;
   margin: 0 5%;
-
+  @media #{$media750} {
+    margin: 0 1%;
+  }
 }
 
 .social-icons-list li a {

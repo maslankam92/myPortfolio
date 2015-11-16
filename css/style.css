@@ -800,6 +800,12 @@ a {
   display: inline-block;
   max-width: 500px;
 }
+@media screen and (max-width: 1130px) {
+  .image-portfolio-main,
+  .image-portfolio-side {
+    max-width: 300px;
+  }
+}
 
 .text-portfolio-main,
 .text-portfolio-side {
@@ -812,6 +818,31 @@ a {
   padding: 5%;
   width: 40%;
   vertical-align: top;
+}
+@media screen and (max-width: 900px) {
+  .text-portfolio-main,
+  .text-portfolio-side {
+    font-size: 1rem;
+    padding: 1%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .text-portfolio-main,
+  .text-portfolio-side {
+    display: block;
+    margin-top: 5%;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .text-portfolio-main {
+    line-height: initial;
+  }
+}
+
+.slide {
+  margin: 0;
 }
 
 .image-portfolio-side {
@@ -912,6 +943,11 @@ a {
   font-weight: 900;
   text-transform: uppercase;
 }
+@media screen and (max-width: 600px) {
+  .contact-text {
+    font-size: 2rem;
+  }
+}
 
 .contact-text:last-child {
   font-size: 2rem;
@@ -925,6 +961,11 @@ a {
 .social-icons-list li {
   display: inline-block;
   margin: 0 5%;
+}
+@media screen and (max-width: 750px) {
+  .social-icons-list li {
+    margin: 0 1%;
+  }
 }
 
 .social-icons-list li a {
