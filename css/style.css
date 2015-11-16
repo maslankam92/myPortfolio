@@ -799,6 +799,7 @@ a {
   border: 5px solid #1d1d1d;
   display: inline-block;
   max-width: 500px;
+  width: 95%;
 }
 @media screen and (max-width: 1130px) {
   .image-portfolio-main,
@@ -914,11 +915,25 @@ a {
   left: -45px;
   top: 150px;
 }
+@media screen and (max-width: 750px) {
+  .owl-theme .owl-controls .owl-buttons .owl-prev {
+    left: 0;
+    top: 100px;
+    color: #eb4549;
+  }
+}
 
 .owl-theme .owl-controls .owl-buttons .owl-next {
   background: none;
   right: -45px;
   top: 150px;
+}
+@media screen and (max-width: 750px) {
+  .owl-theme .owl-controls .owl-buttons .owl-next {
+    right: 0;
+    top: 100px;
+    color: #eb4549;
+  }
 }
 
 .contact {
@@ -957,6 +972,11 @@ a {
   list-style: none;
   margin: 5% 0;
 }
+@media screen and (max-width: 700px) {
+  .social-icons-list {
+    margin: 10% 0;
+  }
+}
 
 .social-icons-list li {
   display: inline-block;
@@ -976,6 +996,11 @@ a {
   color: #1d1d1d;
   font-size: 6rem;
   transition: .2s;
+}
+@media screen and (max-width: 400px) {
+  .social-icons-list i {
+    font-size: 4rem;
+  }
 }
 
 .gmail a:hover i {

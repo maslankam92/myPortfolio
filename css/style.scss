@@ -317,6 +317,7 @@ a {
   border: 5px solid $color-mainBlack;
   display: inline-block;
   max-width: 500px;
+  width: 95%;
   @media #{$media1130} {
     max-width: 300px;
   }
@@ -423,12 +424,22 @@ a {
   background: none;
   left: -45px;
   top: 150px;
+  @media #{$media750} {
+    left: 0;
+    top: 100px;
+    color: $color-mainRed;
+  }
 }
 
 .owl-theme .owl-controls .owl-buttons .owl-next{
   background: none;
   right: -45px;
   top: 150px;
+  @media #{$media750} {
+    right: 0;
+    top: 100px;
+    color: $color-mainRed;
+  }
 }
 
 
@@ -459,6 +470,9 @@ a {
 .social-icons-list {
   list-style: none;
   margin: 5% 0;
+  @media #{$media700} {
+    margin: 10% 0;
+  }
 }
 
 .social-icons-list li {
@@ -477,6 +491,9 @@ a {
   color: $color-mainBlack;
   font-size: 6rem;
   transition: .2s;
+  @media #{$media400} {
+    font-size: 4rem;
+  }
 }
 
 .gmail a:hover i {
